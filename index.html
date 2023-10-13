@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tabela</title>
   </head>
+  <header>
+    <h1 style="text-align: center">
+      <img
+        src="./img/o-que-considerar-antes-de-comprar-um-novo-jogo-500x383.png"
+        width="20%"
+      />
+    </h1>
+  </header>
   <body>
     <style>
       th,
@@ -13,49 +21,69 @@
         border-radius: 10px;
       }
       tr:nth-child(even) {
-        background-color: #b2dddd;
+        background-color: #b1ffff;
+      }
+      tr:nth-child(odd) {
+        background-color: #9ea7f0;
+      }
+      td {
+        text-align: center;
       }
     </style>
-    <table style="width: 80%">
+    <table style="width: 100%">
       <tr>
-        <th></th>
-        <th><img src="./1024x576.jpeg" width="70" height="50" /></th>
+        <th style="width: 10%"></th>
         <th>
           <img
-            src="./the-confusion-about-cs2s-new-logo-which-is-the-real-one-v0-hz7aw7l2qvhb1.webp"
-            width="50"
-            height="50"
-          />
-        </th>
-        <th>
-          <img
-            src="./82883965c6a7fe6a4c35ed67fe9f21c5fbdcdf61-700x394.jpg"
+            src="./img/1024x576.jpeg"
             width="70"
             height="50"
+            alt="logo league of legends"
           />
         </th>
         <th>
-          <img src="./transferir.jpg" width="60" height="50" />
+          <img
+            src="./img/the-confusion-about-cs2s-new-logo-which-is-the-real-one-v0-hz7aw7l2qvhb1.webp"
+            width="50"
+            height="50"
+            alt="logo cs2"
+          />
         </th>
         <th>
-          <img src="./1.webp" width="80" height="50" />
+          <img
+            src="./img/82883965c6a7fe6a4c35ed67fe9f21c5fbdcdf61-700x394.jpg"
+            width="70"
+            height="50"
+            alt="logo Minecraft"
+          />
+        </th>
+        <th>
+          <img
+            src="./img/transferir.jpg"
+            width="60"
+            height="50"
+            alt="logo rocket league"
+          />
+        </th>
+        <th>
+          <img src="./img/1.webp" width="80" height="50" alt="logo fifa 24" />
         </th>
       </tr>
       <tr>
-        <th></th>
+        <th>Nome do Jogo</th>
         <th style="width: 20%">League of Legends</th>
         <th style="width: 20%">CS2</th>
         <th style="width: 20%">Minecraft</th>
-        <th style="width: 20%">Rocket League</th>
-        <th style="width: 20%">"Fifa 24"</th>
+        <th style="width: 15%">Rocket League</th>
+        <th style="width: 25%">"Fifa 24"</th>
       </tr>
       <tr>
-        <td>Nível de jogo</td>
-        <td>Jogo Horrível</td>
-        <td>Jogo Average</td>
-        <td>Melhor jogo ever</td>
-        <td>Já foi algo de jeito</td>
-        <td>A cada ano fica pior</td>
+        <td style="text-align: center">Nível de jogo</td>
+        <td style="text-align: center">Jogo Horrível</td>
+        <td style="text-align: center">Jogo Average</td>
+        <td style="text-align: center">Melhor jogo ever</td>
+        <td style="text-align: center">Já foi algo de jeito</td>
+        <td style="text-align: center">A cada ano fica pior</td>
       </tr>
       <tr>
         <td>Pontuação de 0-10</td>
@@ -74,5 +102,18 @@
         <td>Ainda bem que não tem voice chat</td>
       </tr>
     </table>
+    <br />
+    <br />
+    <h3>Introduza abaixo um jogo à sua escolha</h3>
+    <br />
+    <textarea
+      id="message"
+      name="message"
+      rows="10"
+      cols="50"
+      required=""
+    ></textarea>
+    <br />
+    <input type="submit" value="Submeter o meu jogo" />
   </body>
 </html>
